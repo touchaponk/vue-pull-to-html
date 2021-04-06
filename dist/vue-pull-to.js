@@ -346,9 +346,10 @@ var render = function() {
               _vm._t(
                 "top-block",
                 [
-                  _c("p", { staticClass: "default-text" }, [
-                    _vm._v(_vm._s(_vm.topText))
-                  ])
+                  _c("p", {
+                    staticClass: "default-text",
+                    attrs: { "v-html": _vm.topText }
+                  })
                 ],
                 {
                   state: _vm.state,
@@ -390,9 +391,10 @@ var render = function() {
               _vm._t(
                 "bottom-block",
                 [
-                  _c("p", { staticClass: "default-text" }, [
-                    _vm._v(_vm._s(_vm.bottomText))
-                  ])
+                  _c("p", {
+                    staticClass: "default-text",
+                    attrs: { "v-html": _vm.bottomText }
+                  })
                 ],
                 {
                   state: _vm.state,
@@ -776,7 +778,7 @@ function getMessageByState(config, state) {
 
       var sd = this.$el.style;
       setTransition(sd, duration > 0 || delay > 0 ? 'transform' : 'none', "".concat(duration, "ms"), "".concat(delay, "ms"));
-      sd.setProperty('transform', "translate(0, ".concat(y, "px)"));
+      sd.setProperty('transform', y === 0 ? 'none' : "translate(0, ".concat(y, "px)"));
     },
     checkBottomReached: function checkBottomReached() {
       var el = this.$refs['scroll-container'];

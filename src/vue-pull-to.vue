@@ -11,7 +11,7 @@
             :state-text="topText"
             :trigger-distance="_topConfig.triggerDistance"
             :diff="diff">
-        <p class="default-text">{{ topText }}</p>
+        <p class="default-text" :v-html="topText" />
       </slot>
     </div>
     <div ref="scroll-container" class="scroll-container">
@@ -28,7 +28,7 @@
             :state-text="bottomText"
             :trigger-distance="_bottomConfig.triggerDistance"
             :diff="diff">
-        <p class="default-text">{{ bottomText }}</p>
+        <p class="default-text" :v-html="bottomText"/>
       </slot>
     </div>
   </div>

@@ -1,5 +1,4 @@
-
-
+Forked from https://www.npmjs.com/package/vue-pull-to to add HTML support for all text config
 # Vue-Pull-To
 A pull-down refresh and pull-up load more and infinite scroll component for Vue.js.
 
