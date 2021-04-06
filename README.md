@@ -1,3 +1,5 @@
+
+
 # Vue-Pull-To
 A pull-down refresh and pull-up load more and infinite scroll component for Vue.js.
 
@@ -17,7 +19,7 @@ A pull-down refresh and pull-up load more and infinite scroll component for Vue.
 
 ## Installation
 ``` sh
- npm install vue-pull-to --save
+ npm install vue-pull-to-html --save
 ```
 
 ## Usage
@@ -33,7 +35,7 @@ A pull-down refresh and pull-up load more and infinite scroll component for Vue.
 </template>
 
 <script>
-  import PullTo from 'vue-pull-to'
+  import PullTo from 'vue-pull-to-html'
   import { fetchDataList } from 'api'
   
   export default {
