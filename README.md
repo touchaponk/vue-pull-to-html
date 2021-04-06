@@ -19,7 +19,7 @@ A pull-down refresh and pull-up load more and infinite scroll component for Vue.
 
 ## Installation
 ``` sh
- npm install vue-pull-to --save
+ npm install vue-pull-to-html --save
 ```
 
 ## Usage
